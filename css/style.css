@@ -1,0 +1,92 @@
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.topo_menu{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: #16cfb0;
+}
+   
+.menu{
+  float: right;
+}        
+
+.menu ul{
+display: inline-block;
+padding-top: 10px;
+} 
+
+.menu ul li{
+  display: inline;
+  padding-right: 20px;
+  color: #fff;
+  text-align: center;
+}             
+
+.btn_entrar{
+  background-color: #f2bd2e;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+
+
+/* corpo anuncio */
+.corpo_anuncio {
+
+}
+
+.corpo_anuncio h1{
+  padding-top: 50px;
+  color: #565656;
+}
+
+.corpo_anuncio p{
+  font-weight: 300;
+  line-height: 10px;
+  color: #565656;
+}
+
+
+.corpo_imagens{
+  width: 100%;
+  height: 450px;
+  background-color: #f1f1f1;
+  position: relative;
+  border-radius: 10px;
+}
+
+.corpo_preco{
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: #f2bd2e;
+  border-radius: 10px;
+}
+
+.corpo_preco h2{
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.corpo_anunciante{
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-top: 10px;
+}
+
+.corpo_anunciante p{
+  color: #565656;
+  line-height: 5px;
+}
