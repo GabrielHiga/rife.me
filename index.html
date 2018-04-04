@@ -21,9 +21,41 @@
               <div class="menu">
                   <ul>
                       <li>Cadastrar-se</li>
-                      <li class="btn_entrar">Entrar</li>
+                      <li class="btn_entrar" data-toggle="modal" data-target="#exampleModal">Login</li>
                   </ul>
               </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira o seu E-mail">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Lembrar</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+            </div>
+          </div>
         </div>
       </div>
     <!-- FIM MENU -->
@@ -74,47 +106,42 @@
 
         <div class="container">
           <div class="row">
-              <div class="col-1"><div class="btn_numero">01</div></div>
-              <div class="col-1"><div class="btn_numero">02</div></div>
-              <div class="col-1"><div class="btn_numero">03</div></div>
-              <div class="col-1"><div class="btn_numero reserved">04</div></div>
-              <div class="col-1"><div class="btn_numero">05</div></div>
-              <div class="col-1"><div class="btn_numero">06</div></div>
-              <div class="col-1"><div class="btn_numero">07</div></div>
-              <div class="col-1"><div class="btn_numero">08</div></div>
-              <div class="col-1"><div class="btn_numero">09</div></div>
-              <div class="col-1"><div class="btn_numero">10</div></div>
-              <div class="col-1"><div class="btn_numero">11</div></div>
-              <div class="col-1"><div class="btn_numero">12</div></div>
-          </div>
-
-          <div class="row">
-              <div class="col-1"><div class="btn_numero">13</div></div>
-              <div class="col-1"><div class="btn_numero">14</div></div>
-              <div class="col-1"><div class="btn_numero">15</div></div>
-              <div class="col-1"><div class="btn_numero">16</div></div>
-              <div class="col-1"><div class="btn_numero">17</div></div>
-              <div class="col-1"><div class="btn_numero">18</div></div>
-              <div class="col-1"><div class="btn_numero">19</div></div>
-              <div class="col-1"><div class="btn_numero">20</div></div>
-              <div class="col-1"><div class="btn_numero reserved">21</div></div>
-              <div class="col-1"><div class="btn_numero">22</div></div>
-              <div class="col-1"><div class="btn_numero">23</div></div>
-              <div class="col-1"><div class="btn_numero">24</div></div>
-          </div>
-          <div class="row">
-              <div class="col-1"><div class="btn_numero">25</div></div>
-              <div class="col-1"><div class="btn_numero">26</div></div>
-              <div class="col-1"><div class="btn_numero">27</div></div>
-              <div class="col-1"><div class="btn_numero">28</div></div>
-              <div class="col-1"><div class="btn_numero">29</div></div>
-              <div class="col-1"><div class="btn_numero">30</div></div>
-              <div class="col-1"><div class="btn_numero">31</div></div>
-              <div class="col-1"><div class="btn_numero">32</div></div>
-              <div class="col-1"><div class="btn_numero">33</div></div>
-              <div class="col-1"><div class="btn_numero">34</div></div>
-              <div class="col-1"><div class="btn_numero">35</div></div>
-              <div class="col-1"><div class="btn_numero">36</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">01</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">02</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">03</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero reserved">04</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">05</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">06</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">07</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">08</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">09</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">10</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">11</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">12</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">13</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">14</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">15</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">16</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">17</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">18</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">19</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">20</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero reserved">21</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">22</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">23</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">24</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">25</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">26</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">27</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">28</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">29</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">30</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">31</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">32</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">33</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">34</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">35</div></div>
+              <div class="col-3 col-md-2 col-lg-1"><div class="btn_numero">36</div></div>
           </div>
           <div class="linha"></div>
         </div>
@@ -129,28 +156,28 @@
             <div class="box_anuncios">
 
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-3">
                       <div class="img_recomenda"></div>
                       <div class="descricao_recomenda">
                         Anúncio #
                       </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-sm-3">
                       <div class="img_recomenda"></div>
                       <div class="descricao_recomenda">
                         Anúncio #
                       </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-sm-3">
                       <div class="img_recomenda"></div>
                       <div class="descricao_recomenda">
                         Anúncio #
                       </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-sm-3">
                       <div class="img_recomenda"></div>
                       <div class="descricao_recomenda">
                         Anúncio #
