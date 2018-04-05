@@ -74,7 +74,7 @@ padding-top: 10px;
   border-radius: 10px;
 }
 
-.img_miniatura{
+.img_miniatura img{
   width: 100px;
   height: 100px;
   position: relative;
@@ -82,17 +82,37 @@ padding-top: 10px;
   background-color: #f1f1f1;
   margin-right: 15px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
-.corpo_imagens{
+.corpo_imagens img{
   width: 100%;
   height: 450px;
   background-color: #f1f1f1;
-  background-image: url('../imagens/buggy.jpeg');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
   position: relative;
   border-radius: 10px;
   overflow:hidden;
+}
 
+@media(max-width: 990px){
+  .corpo_imagens img{
+    height: 350px;
+  }
+}
+
+@media(max-width: 768px){
+  .corpo_imagens img{
+    height: 250px;
+  }
+}
+
+@media(max-width: 575px){
+  .corpo_imagens img{
+    height: 200px;
+    margin-left: 10px;
+  }
 }
 
 .corpo_preco{
@@ -110,7 +130,7 @@ padding-top: 10px;
 }
 
 .corpo_anunciante{
-  width: 100%;
+  
   height: auto;
   background-color: #f1f1f1;
   position: relative;
